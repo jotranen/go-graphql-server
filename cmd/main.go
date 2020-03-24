@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 	"log"
-	"net/http"
 
 	"github.com/gin-gonic/gin"
+	"github.com/jotranen/go-graphql-server/internal/handlers"
 )
 
 func main() {
@@ -15,9 +15,7 @@ func main() {
 
 	r := gin.Default()
 
-	r.GET("/ping", func(c *gin.Context) {
-		c.JSON(http.StatusOK, "OK")
-	})
+	r.GET("/ping", handlers.Ping())
 
 	fmt.Println("Running @ http://" + host + ":" + port + pathQL)
 
