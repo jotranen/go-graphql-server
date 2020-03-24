@@ -5,6 +5,9 @@
 *.so
 *.dylib
 
+__debug_bin
+go-graphql-server
+
 # Test binary, built with `go test -c`
 *.test
 
