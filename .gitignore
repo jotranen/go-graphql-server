@@ -18,3 +18,4 @@ go-graphql-server
 # vendor/
 
 .vscode/
+bin/

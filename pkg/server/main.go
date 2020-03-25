@@ -10,6 +10,7 @@ import (
 
 // HOST exported variables
 var HOST string
+
 // PORT exported variables
 var PORT string
 
